@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            font-size: 18px;
+            color: black;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:visited {
+            color: gray;
+        }
+
+        .left {
+            color: black;
+            font-size: 15px;
+        }
+        .left::after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url('./images/hert.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 4px;
+            width: 30px;
+            height: 30px;
+        }
+        .right {
+            color: black;
+            font-size: 15px;
+        }
+        .right::after {
+            content: '->';
+            display: inline-block;
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com">前端小课</a>
+    <p class="left">前端小课</p>
+    <p class="right">前端小课</p>
+</body>
+</html>
